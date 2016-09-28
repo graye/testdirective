@@ -13,4 +13,10 @@ export class AppComponent {
   color: string;
 
   color_options = ['black', 'red', 'green'];
+
+  counter: number = 0;
+
+  onBack(event){
+    console.log(event);
+  }
 }
