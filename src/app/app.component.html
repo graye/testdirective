@@ -4,9 +4,7 @@
 <input type="text" [(ngModel)]="color"/>
 <br/>
 <select [(ngModel)]="color2">
-  <option value="black">Black</option>
-  <option value="#333">#333</option>
-  <option value="Pink">Pink</option>
+  <option *ngFor="let opt of color_options" value="{{opt}}">{{opt}}</option>
 </select>
 <p [highlight]="color2">Dynamic Highlight</p>
 <p [highlight]="'black'">Highlight me</p>

@@ -11,4 +11,6 @@ export class AppComponent {
   color2: string;
 
   color: string;
+
+  color_options = ['black', 'red', 'green'];
 }
